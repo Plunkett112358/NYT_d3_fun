@@ -35,7 +35,8 @@ class BubbleChart
 
     # use the max total_amount in the data as the max in the scale's domain
     max_amount = d3.max(@data, (d) -> parseInt(d.price))
-    @radius_scale = d3.scale.pow().exponent(1.4).domain([0, max_amount]).range([2, 30])
+    @radius_scale = d3.scale.pow().exponent(1.4).domain([0, max_amount]).range([2, 30
+    ])
     
     this.create_nodes()
     this.create_vis()
